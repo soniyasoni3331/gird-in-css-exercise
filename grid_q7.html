@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Assignment Q7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(26, 25, 25);
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,250px);
+
+        }
+        .item{
+            border: 4px solid white;
+            border-radius:  10px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        
+
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .item6{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1 item"><img src="/Assignments/assetimg1.jpg" alt="sample img"></div>
+        <div class="item2 item"><img src="/Assignments/assetimg2.jpg" alt="sample img"></div>
+        <div class="item3 item"><img src="/Assignments/assetimg3.jpg" alt="sample img"></div>
+        <div class="item4 item"><img src="/Assignments/assetimg4.jpg" alt="sample img"></div>
+        <div class="item5 item"><img src="/Assignments/assetimg5.jpg" alt="sample img"></div>
+        <div class="item6 item"><img src="/Assignments/assetimg6.jpg" alt="sample img"></div>
+    </div>    
+</body>
+</html>

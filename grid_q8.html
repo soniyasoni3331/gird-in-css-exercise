@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid assignment Q1
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #1c1b1b;
+        }
+        
+        .container{ 
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            color: rgb(171, 170, 170);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0px 20px;
+            text-align: left;
+        }
+        .color-pic{
+            height: 100vh;
+            width: 90%;
+            padding: 50px;
+            display: grid;
+            grid-template:repeat(2,1fr)/repeat(4,1fr) ;
+            justify-content: center;
+            column-gap: 30px; 
+        }
+        
+        .item{
+            height: 350px;
+            width: 250px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item1{
+            background-color: #ff7f50;
+        }
+        .item2{
+            background-color: #ff69b4;
+        }
+        .item3{
+            background-color:#6495ed;
+        }
+        .item4{
+            background-color:#7fffd4;
+
+        }
+        .item5{
+            background-color:#fafad2;
+
+        }.item6{
+            background-color:#6a5acd;
+
+        }.item7{
+            background-color:#87cefa;
+
+        }
+        .item8{
+            background-color:#90ee90;
+
+        }
+    </style>
+</head>
+
+<body><h1>Feeling Fancy</h1>
+    <div class="container">
+        <div class="color-pic">
+            <div class="item item1">#ff7f50</div>
+            <div class="item item2">#ff69b4</div>
+            <div class="item item3">#6495ed</div>
+            <div class="item item4">#7fffd4</div>
+            <div class="item item5">#fafad2</div>
+            <div class="item item6">#6a5acd</div>
+            <div class="item item7">#87cefa</div>
+            <div class="item item8">#90ee90</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
